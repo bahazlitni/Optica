@@ -1,0 +1,1 @@
+const env1 = new Environment(document.body);

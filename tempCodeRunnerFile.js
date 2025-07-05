@@ -1,0 +1,1 @@
+        new StaticPoint(1, 0),

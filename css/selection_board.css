@@ -1,0 +1,128 @@
+p {
+    padding: 0;
+    margin: 0;
+}
+.selection-board {
+    position: fixed;
+    width: 300px;
+    overflow: hidden;
+    background-color: rgb(50, 50, 66);
+    left: 2%;
+    bottom: 5%;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    user-zoom: fixed;
+}
+.selection-board-container {
+    width: 100%;
+    height: 90%;
+
+    margin: auto;
+    margin-top: 5%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* SECTION */
+.selection-board-section {
+
+    border-bottom: solid 1px rgba(255, 255, 255, 0.33);
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+.selection-board-section-container {
+    display: grid;
+    place-items: center;
+    width: 85%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.selection-board-section-header {
+    display: grid;
+    align-items: center;
+    justify-content: left;
+    height: 50px;
+    width: 100%;
+    font-weight: bold;
+}
+.selection-board-section-header {
+    color: white;
+    font-size: 15px;
+}
+
+.selection-board-section-body {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.selection-board-section-body-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.selection-board-section-row {
+    display: grid;
+    align-items: center;
+    column-gap: 10%;
+    height: 28px;
+    width: 100%;
+}
+
+/* INPUT */
+.selection-board-input-field-container, .selection-board-input-field-container-frozen {
+    height: 100%;
+    width: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+.selection-board-input-field-container-frozen {
+    opacity: 50%;
+}
+
+.selection-board-input-field-container:hover {
+    outline: 1px solid rgba(255, 255, 255, 0.33);
+}
+
+
+.selection-board-input-field-tag {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 12px;
+}
+.selection-board-input-field-unit{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+}
+
+.selection-board-input-field, .selection-board-input-field-frozen {
+    outline: none;
+    border: none;
+    background: none;
+    width: 100%;
+    height: 11px;
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+}
+
+
+.selection-board-input-text-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selection-board-input-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}

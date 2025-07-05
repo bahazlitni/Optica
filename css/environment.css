@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    user-zoom: fixed;
+}
+button {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.environment {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: black;
+    overflow: hidden;
+}
+
+.environment-layer-container {
+    display: block;
+    position: absolute;
+}
+.environment-fixed-layer-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.environment-layer, .environment-fixed-layer {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.environment-fixed-layer {
+    z-index: 1000;
+}
+
+.environment-dialog {
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    flex-direction: row;
+}
+
+.environment-info-text {
+    color: white;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+.camera-scale-indicator-div {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.camera-scale-indicator-div svg {
+    width: 100%;
+}
